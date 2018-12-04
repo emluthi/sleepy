@@ -36,20 +36,37 @@ ul {
     animation: imageAnimation 180s linear infinite 0s;
 }
 
-#cta-text {
+#video {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+}
+
+#pre-cta {
     z-index: 1000;
     position: absolute;
-    top: 250px;
+    top: 100px;
     left: 0;
     width: 100%;
     text-align: center;
-    opacity: 1;
-    color: #fff;
-    animation: ctaAnimation 45s linear infinite 0s;
 }
 
-#cta-text h1 {
+#cta {
+    z-index: 1000;
+    position: absolute;
+    top: 225px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+#cta-text {
     font-size: 80px;
+    opacity: 0;
+    color: #fff;
+    text-shadow: 1px 1px 2px #000000;
+    animation: ctaAnimation 45s linear 0s;
 }
 
 .cb-slideshow li div {
@@ -66,9 +83,10 @@ ul {
 }
 
 .cb-slideshow li div h3 {
-    font-size: 60px;
+    font-size: 48px;
     font-weight: 400;
     font-style: normal;
+    text-shadow: 1px 1px 1px #000000;
     padding: 0;
     margin: 25px auto;
     opacity: 0.8;
@@ -133,24 +151,24 @@ ul {
 
 @keyframes titleAnimation { 
     0% { opacity: 0 }
-    10% { opacity: 0.8 }
-    20% { opacity: 0.8 }
-    30% { opacity: 0 }
+    8% { opacity: 1 }
+    17% { opacity: 1 }
+    19% { opacity: 0 }
     100% { opacity: 0 }
 }
 
 @keyframes ctaAnimation {
     0% { opacity: 0; animation-timing-function: ease-in; }
-    5% { opacity: 0.25 }
-    15% { opacity: 0.50 }
+    5% { opacity: 0.60 }
+    15% { opacity: 0.85 }
     30% { opacity: 1; }
-    70% { opacity: 1; animation-timing-function: ease-out; }
+    80% { opacity: 1; animation-timing-function: ease-out; }
     100% { opacity: 0 }
 }
 
 @media screen and (max-width: 1140px) {
     .cb-slideshow li div h3 {
-        font-size: 40px
+        font-size: 36px
     }
 }
 
